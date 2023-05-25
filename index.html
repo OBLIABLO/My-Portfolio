@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300&family=Kaushan+Script&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Kaushan+Script&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
+    <script>
+        function sendMail(){
+            var params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+            };
+
+            const serviceID = "service_fau6yxg";
+            const templateID = "template_ce4xhe3";
+
+            emailjs
+                .send(serviceID, templateID, params)
+                .then((res) => {
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("message").value = "";
+                    console.log(res);
+                    alert("Message sent successfully");
+                })
+                .catch((err) => console.log(err));
+        }
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_gNtKuwdgegE9KyZs4NguC");
+        })();
+    </script>     
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li><a href="#home" class="nav">Home</a></li>
+                <li><a href="#about" class="nav">About</a></li>
+                <li><a href="#projects" class="nav">Projects</a></li>
+                <li><a href="#contact" class="nav">Contact</a></li>
+                <img src="images/moon.png" alt="" id="icon">
+            </ul>
+        </div>
+    </div>
+    <section class="home" id="home">
+        <img src="images/SJB1.png" alt="profile photo" class="image" >
+            <h1 class="home-content" data-aos="fade-up" data-aos-duration="600">Shaun Barreto</h1>
+            <h2 class="second-title" data-aos="fade-up" data-aos-duration="800">UI/UX designer & Frontend Developer</h2>
+        <div class="icons" >
+            <a href="https://github.com/OBLIABLO" target="_blank"><i class="fa-brands fa-github fa-3x" style="color: #6c00fa;"></i></a>
+            <a href="https://www.linkedin.com/in/shaun-barreto-b185b7221/" target="_blank"><i class="fa-brands fa-linkedin fa-3x" style="color: #006eff;"></i></a>
+            <a href="https://www.instagram.com/_shaun_j_barreto_/" target="_blank"><i class="fa-brands fa-instagram fa-3x" style="color: #ff0062;"></i></a>
+        </div>  
+    </section>
+    <section class="about"  id="about" >
+        <h2 class="about-header" data-aos="fade-right" data-aos-duration="600">About Me</h2>
+        <div class="about-container">
+            <div class="about-content" data-aos="fade-right">
+                <ul>
+                    <li class="li-items" data-aos="fade-right" data-aos-duration="700">Hi, <span>I'm Shaun Jesus Barreto</span>. I'm a UI/UX designer and frontend developer based in Goa, India. 
+                        I'm passionate about creating beautiful and user-friendly interfaces that make people's lives easier. </li>
+                    <li class="li-items" data-aos="fade-right" data-aos-duration="700"> I'm currently pursuing my Master of Computer Applications degree at Goa University. I completed my Bachelor of 
+                        Computer Applications degree at Rosay College of Commerce and Arts, achieving a CPI of 8.18. 
+                        My higher secondary education was completed at Rosary Higher Secondary School in Navelim, Goa, with a percentage of 76%."</li>
+                    <li class="li-items" data-aos="fade-right" data-aos-duration="700">In my free time, I enjoy playing the guitar🎻, listening to music🎶, drawing🎨, watching anime👺, and playing video games🎮. 
+                        I'm also a big fan of technology and I'm always learning new things. </li>
+                        <li class="li-items" data-aos="fade-right" data-aos-duration="700">I'm actively seeking job opportunities that allow me to contribute, learn, and grow. If you have a suitable opportunity 
+                            that aligns with my skills and experience, please feel free to reach out to me without hesitation😁.</li>
+                </ul>
+                <div class="contact-resume" data-aos="fade-right" data-aos-duration="500">
+                    <a href="#contact" class="check-link"><div class="check" >Contact me</div></a>
+                    <a href="" class="check-link" target="_blank"><div class="check">Resume</div></a>
+                </div>
+            </div>
+            <div class="skills-container" >
+                <h3 class="skills-header" data-aos="fade-left" data-aos-duration="500">Skills</h3>
+                <div class="skill-content">
+                    <div class="item" data-aos="fade-down" data-aos-duration="200">html</div>
+                    <div class="item" data-aos="fade-down" data-aos-duration="400">css</div>
+                    <div class="item" data-aos="fade-down" data-aos-duration="600">javascript</div>
+                    <div class="item" data-aos="fade-down" data-aos-duration="800">c</div>
+                    <div class="item" data-aos="fade-down" data-aos-duration="200">c++</div>
+                    <div class="item" data-aos="fade-down" data-aos-duration="400">Git</div>
+                    <div class="item" data-aos="fade-down" data-aos-duration="600">php</div>
+                    <div class="item" data-aos="fade-down" data-aos-duration="800">Bootstrap</div>
+                    <div class="item" data-aos="fade-down" data-aos-duration="1000">React</div>
+                </div>
+                <h3 class="tools-header" data-aos="fade-left" data-aos-duration="500">Tools</h3>
+                <div class="tools-content">
+                    <div class="item"  data-aos="fade-down" data-aos-duration="200">Gimp</div>
+                    <div class="item"  data-aos="fade-down" data-aos-duration="400">Photoshop</div>
+                    <div class="item"  data-aos="fade-down" data-aos-duration="600">Figma</div>
+                    <div class="item"  data-aos="fade-down" data-aos-duration="800">Visual Studio Code</div>
+                    <div class="item"  data-aos="fade-down" data-aos-duration="200">Github</div>
+                    <div class="item"  data-aos="fade-down" data-aos-duration="400">Sublime Text</div>
+                    <div class="item"  data-aos="fade-down" data-aos-duration="600">Canva</div>
+                </div>
+                <h3 class="language-header" data-aos="fade-left" data-aos-duration="500">Languages</h3>
+                <div class="language-content">
+                    <div class="item"  data-aos="fade-down" data-aos-duration="200">English</div>
+                    <div class="item"  data-aos="fade-down" data-aos-duration="400">Konkani</div>
+                    <div class="item"  data-aos="fade-down" data-aos-duration="600">Hindi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="project-header" data-aos="fade-right" data-aos-duration="600">Projects</h2>
+        <div class="project-container">
+            <div class="project-items" data-aos="fade-right" data-aos-duration="700">
+                <h3 class="project-title">Portfolio Webpage</h3>
+                <img src="images/portfolio.png" alt="project portfolio website" class="image-1">
+                <p class="portfolio-content">Delve into my portfolio webpage, where simplicity meets creativity, presenting my best work in an uncomplicated manner.</p>
+                <div class="portfolio-container">
+                    <div class="language-tabs">#Html</div>
+                    <div class="language-tabs">#Css</div>
+                    <div class="language-tabs">#Javascript</div>
+                </div>
+                <div class="demo-container">
+                    <a href="" class="link-to"><div class="links">Code</div></a>
+                    <a href="" class="link-to"><div class="links">Demo</div></a>
+                </div>
+            </div>
+            <div class="project-items" data-aos="fade-left" data-aos-duration="700">
+                <h3 class="project-title">Dummy Website</h3>
+                <img src="images/dummy.png" alt="project portfolio website" class="image-1">
+                
+            </div>
+            <div class="project-items" data-aos="fade-right" data-aos-duration="700">
+                <h3 class="project-title">Dummy Website</h3>
+                <img src="images/dummy.png" alt="project portfolio website" class="image-1">
+            </div>
+            <div class="project-items" data-aos="fade-left" data-aos-duration="700">
+                <h3 class="project-title">Dummy Website</h3>
+                <img src="images/dummy.png" alt="project portfolio website" class="image-1">
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact" data-aos="fade-right" data-aos-duration="700">
+        <div class="contact-container">
+            <h2 class="contact-header">Get in touch 🖐</h2>
+            <form action="">
+                <div class="info-container">
+                    <div class="item-container">
+                        <h4>Name</h4>
+                        <input type="text" id="name" placeholder="Enter Name">
+                    </div>
+                    <div class="item-container">
+                        <h4>Email</h4>
+                        <input type="text" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="item-container1">
+                        <h4>Message</h4>
+                        <textarea name="" id="message" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="send-message">
+                    <button type="submit" onclick="sendMail()">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="socials">
+                <a href="https://github.com/OBLIABLO" target="_blank"><i class="fa-brands fa-github fa-3x" style="color: #6c00fa;"></i></a>
+                <a href="https://www.linkedin.com/in/shaun-barreto-b185b7221/" target="_blank"><i class="fa-brands fa-linkedin fa-3x" style="color: #006eff;"></i></a>
+                <a href="https://www.instagram.com/_shaun_j_barreto_/" target="_blank"><i class="fa-brands fa-instagram fa-3x" style="color: #ff0062;"></i></a>
+            </div>
+            <div class="gmail">
+                Email : shaunjesusbarreto@gmail.com
+            </div>
+            <div class="copyright">
+                © 2023-PRESENT Shaun Barreto. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "images/sun.png";
+            } else {
+                icon.src = "images/moon.png";
+            }
+            icon.style.opacity = "0";
+            setTimeout(function() {
+                icon.style.opacity = "1";
+            }, 160);
+        };
+    </script>
+</body>
+</html>
