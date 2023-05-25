@@ -35,13 +35,14 @@ html{
 /*=============================Navbar========================================================================== */
 /*=============================Navbar========================================================================== */
 /*=============================Navbar========================================================================== */
-.container{
+/* .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: crimson; */
+    background-color: crimson;
+    width: 100%;
    
-}
+} */
 .header{
     background-color: var(--white);
     padding: 5px;
@@ -51,7 +52,7 @@ html{
     border-bottom: 2px solid var(--black);
     position:fixed;
 }
-.header ul{
+.navbar{
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -78,10 +79,7 @@ html{
     color: #ff9d1d;
 }
 /*=============================sections========================================================================== */
-section{
-    width: 100%;
 
-}
 .image{
     width: 235px;
     margin-top: 70px;
@@ -98,6 +96,7 @@ section{
     text-align: center;
     /* flex-direction: column; */
     height: auto;
+    overflow: hidden;
 }
 .home-container{
     margin-bottom: 20px;
@@ -140,6 +139,7 @@ i:hover{
   background-color: var(--section-2); 
   height: auto;
   width: 100%;
+  overflow: hidden;
 }
 .about-container{
     display: flex;
@@ -255,6 +255,7 @@ span{
     background-color: var(--section-3);
     height: auto;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 .project-header{
     text-align: center;
@@ -367,6 +368,7 @@ span{
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: var(--section-2);
+    overflow: hidden;
 }
 .contact-container{
     background-color: var(--white);
@@ -469,6 +471,7 @@ h4{
 /*========================================== Footer=============================================================== */
 footer{
     background-color: #000000;
+    overflow: hidden;
 }
 .footer-container{
     width: 99%;
@@ -530,7 +533,7 @@ font-size: 30px;
     #icon{
         width: 20px;
     }
-    .header ul{
+    .navbar{
         gap: 1em;
     }
     .image{
@@ -559,7 +562,7 @@ font-size: 30px;
     #icon{
         width: 15px;
     }
-    .header ul{
+    .navbar{
         gap: 10px;
     }
     .about-header, .project-header{
