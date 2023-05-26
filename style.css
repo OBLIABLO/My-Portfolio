@@ -35,14 +35,7 @@ html{
 /*=============================Navbar========================================================================== */
 /*=============================Navbar========================================================================== */
 /*=============================Navbar========================================================================== */
-/* .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: crimson;
-    width: 100%;
-   
-} */
+
 .header{
     background-color: var(--white);
     padding: 5px;
@@ -90,11 +83,8 @@ html{
 
 .home{
     background-color: var(--section-1);
-    /* display: flex; */
-    /* justify-content: center; */
     align-items: center;
     text-align: center;
-    /* flex-direction: column; */
     height: auto;
     overflow: hidden;
 }
@@ -102,7 +92,6 @@ html{
     margin-bottom: 20px;
 }
 .home-content{
-    
     font-family: 'Bebas Neue', sans-serif;
     font-size: 100px;
     text-transform: uppercase;
@@ -267,7 +256,6 @@ span{
     color: var(--black);  
 }
 .project-container{
-    /* background-color: #ff1d1d; */
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -278,7 +266,6 @@ span{
 }
 .project-items{
     width: 450px;
-    /* height: 500px; */
     background-color:var(--project-background);
     border-radius: 15px;
     border: 1px solid rgb(99, 99, 99);
@@ -326,7 +313,6 @@ span{
 }
 
 .demo-container{
-    /* background-color:olive; */
     width: 90%;
     display: flex;
     flex-direction: row;
