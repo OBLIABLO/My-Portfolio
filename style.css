@@ -143,6 +143,7 @@ i:hover{
     margin: 0 auto;
     justify-content:space-evenly;
     padding-bottom: 60px;
+    /* border-top: 2px solid orange; */
 }
 .about-header{
     text-align: center;
@@ -161,6 +162,7 @@ i:hover{
     font-family: 'Inconsolata', monospace;
     font-weight: 800;
     color: var(--black);
+    line-height: 25px;
 }
 .li-items:not(:last-child) {
     margin-bottom: 20px;
@@ -209,6 +211,7 @@ span{
 .skills-container{
     flex: 1;
     flex-basis: 250px;
+    /* border-left: 3px solid #ff9900; */
 }
 .skills-header ,.tools-header, .language-header{
     margin-top: 20px;
@@ -217,6 +220,7 @@ span{
     font-weight:bolder;
     font-size: 20px;
     color: var(--black);
+    /* padding-left: 20px; */
 }
 
 .skill-content, .tools-content, .language-content{
@@ -224,7 +228,8 @@ span{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    color: var(--white);  
+    color: var(--white);
+    /* padding-left: 20px;   */
 }
 .item{
     height: 20px;
