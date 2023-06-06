@@ -4,22 +4,26 @@
     --black: #0a0a0a;
     --white: #ffffff;
     --head-title:black;
+    --head-title-border:#ff9900;
     --span-color: rgb(255, 81, 0);
-    --section-1: transparent;
-    --section-2: rgb(235, 244, 253);
-    --section-3: rgb(255, 255, 255);
+    --section-1: linear-gradient(to right,rgb(253, 255, 220),white,white,white,rgb(253, 255, 220));
+    --section-2: rgb(247, 255, 254);
+    --section-3: rgb(253, 253, 249);
+    --card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --skill-tabs: rgb(31, 31, 31);
-    --project-background: rgb(25, 37, 35);
+    --project-background: rgb(255, 255, 255);
   }
 .dark-theme{
     --black: #ffffff;
     --white: #0a0a0a;
-    --head-title:transparent;
+    --head-title:#ff9900;
+    --head-title-border:black;
     --span-color: orange;
-    --section-1: rgb(10, 10, 10);
+    --section-1: linear-gradient(to bottom right,rgb(0, 0, 0),rgb(8, 8, 8),rgb(13, 13, 14),rgb(8, 8, 8), black);
     --section-2: rgb(14, 17, 17);
     --section-3: rgb(13, 13, 14);
-    --skill-tabs: rgb(39, 39, 39);
+    --card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --skill-tabs: rgb(26, 26, 26);
     --project-background: rgb(14, 19, 19);
     transition: 0.2s ease;
 }
@@ -82,7 +86,7 @@ html{
 /*=============================HOME SECTIONS========================================================================== */
 
 .home{
-    background-color: var(--section-1);
+    background-image: var(--section-1);
     align-items: center;
     text-align: center;
     height: auto;
@@ -97,7 +101,7 @@ html{
     text-transform: uppercase;
     letter-spacing: 10px;
     color: var(--head-title);
-    -webkit-text-fill-color: #ff9900;
+    -webkit-text-fill-color: var(--head-title-border);
     -webkit-text-stroke-width: 1px;
 }
 .second-title{
@@ -268,8 +272,8 @@ span{
     width: 450px;
     background-color:var(--project-background);
     border-radius: 15px;
-    border: 1px solid rgb(99, 99, 99);
     padding-bottom: 20px;
+    box-shadow: var(--card-shadow);
 }
 .image-1{
     max-height: 100%;
@@ -282,11 +286,11 @@ span{
     font-family: 'Inconsolata', monospace;
     font-size: 25px;
     font-weight: bold;
-    color: white;
+    color: var(--black);
     padding: 15px;
 }
 .portfolio-content{
-    color: white;
+    color: var(--black);
     font-family: 'Inconsolata', monospace;
     font-size: 16px;
     font-weight: bold;
