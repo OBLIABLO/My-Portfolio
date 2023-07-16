@@ -7,7 +7,7 @@
     --head-title-border:#ff9900;
     --span-color: rgb(255, 81, 0);
     --background: url(./images/backgorund.jpeg);
-    --section-2: rgb(247, 255, 254);
+    --section-2: rgb(255, 255, 255);
     --section-3: rgb(253, 253, 249);
     --card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.19);
     --skill-tabs: rgb(31, 31, 31);
@@ -19,7 +19,7 @@
     --head-title:#ff9900;
     --head-title-border:black;
     --span-color: orange;
-    --background: url(/.images/backgorund-black.jpg);
+    --background: url(./images/backgorund-black.jpg);
     --section-2: rgb(14, 17, 17);
     --section-3: rgb(13, 13, 14);
     --card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.192), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
