@@ -147,12 +147,17 @@ margin: 0 auto;
 width: 100%;
 margin-bottom: 50px;
 }
+
 i{
     padding: 20px;
     margin-bottom: 10px;
+    bottom: 0px;
+    transition: 0.3s;
+    position: relative;
 }
 i:hover{
-    cursor: pointer;  
+    cursor: pointer;
+    bottom: 3px;
   }
 /*=============================ABOUT SECTIONS========================================================================== */
 /*=============================ABOUT SECTIONS========================================================================== */
@@ -217,11 +222,10 @@ span{
 .check{
     padding: 10px;
     font-size: 18px;
-    /* font-family: 'Inconsolata', monospace; */
     font-weight: 800;
     color: black;
     background-color:#ffa51d;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100px;
     text-align: center;
 }
@@ -310,9 +314,13 @@ span{
 .project-items{
     width: 450px;
     background-color:var(--project-background);
-    border-radius: 15px;
+    border-radius: 10px;
     padding-bottom: 20px;
     box-shadow: var(--card-shadow);
+    border: 1px solid var(--white);
+}
+.project-items:hover{
+    border: 1px solid #2b2b2b;
 }
 .image-1{
     max-height: 100%;
@@ -346,9 +354,9 @@ span{
 }
 .language-tabs{
     padding: 5px;
-    background-color: #0a0a0a;
+    background-color: #131f1f;
     color: white;
-    border-radius: 5px;
+    border-radius: 3px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
@@ -370,9 +378,9 @@ span{
 }
 
 .links{
-    background-color: black;
+    background-color: #131f1f;
     color: white;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
