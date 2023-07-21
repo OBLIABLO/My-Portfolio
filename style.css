@@ -362,12 +362,6 @@ span{
     text-align: center;
     letter-spacing: 1px;
 }
-.language-tabs:hover{
-    background-color: #ff9900;
-    box-shadow: 0px 0px 4px 1px #ffa939;
-    color: black;
-}
-
 .demo-container{
     width: 90%;
     display: flex;
