@@ -94,8 +94,21 @@ html{
 /*=============================sections========================================================================== */
 
 .image{
-    width: 235px;
+    width: 270px;
     margin-top: 70px;
+    position: relative;
+    animation-name: rotate;
+    animation-direction: forwards;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
 }
 /*=============================HOME SECTIONS========================================================================== */
 /*=============================HOME SECTIONS========================================================================== */
@@ -577,7 +590,7 @@ font-size: 30px;
         gap: 1em;
     }
     .image{
-        width: 200px;
+        width: 220px;
         margin-top: 70px;
     }
     .fa-3x{
